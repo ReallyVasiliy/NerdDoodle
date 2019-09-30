@@ -1,0 +1,6 @@
+framework module Pods_SharpSketch {
+  umbrella header "Pods-SharpSketch-umbrella.h"
+
+  export *
+  module * { export * }
+}

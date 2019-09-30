@@ -1,0 +1,72 @@
+PODS:
+  - ActiveLabel (1.1.0)
+  - Alamofire (5.0.0-rc.2)
+  - Kingfisher (5.7.1)
+  - MaLiang (2.6.1)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - RxSwiftExt (5.0.0):
+    - RxSwiftExt/Core (= 5.0.0)
+    - RxSwiftExt/RxCocoa (= 5.0.0)
+  - RxSwiftExt/Core (5.0.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - SwiftIconFont (3.0.0)
+  - SwiftyBeaver (1.7.1)
+  - SwiftyDraw (2.1.5)
+  - Swinject (2.6.2)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - Alamofire (~> 5.0.0-rc.2)
+  - Kingfisher (~> 5.0)
+  - MaLiang
+  - RxSwiftExt (~> 5)
+  - SwiftIconFont
+  - SwiftyBeaver
+  - SwiftyDraw
+  - Swinject
+  - SwinjectStoryboard
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActiveLabel
+    - Alamofire
+    - Kingfisher
+    - MaLiang
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - SwiftIconFont
+    - SwiftyBeaver
+    - SwiftyDraw
+    - Swinject
+    - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
+  MaLiang: 80786725401971a260dd13dd43a7d314453cd453
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxSwiftExt: 4564187392cc53823ef241fa4a11647861567026
+  SwiftIconFont: 2ba18554a77c44948dc35b561b344e3c23834a84
+  SwiftyBeaver: da5e573ad583586c18236324c36900990afe1733
+  SwiftyDraw: 217d029fe7b0d351053a58d91fc0a1d2dcd8cdec
+  Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
+
+PODFILE CHECKSUM: eb1d2262737ebc2801e18098e9aaa734b1c1644b
+
+COCOAPODS: 1.7.5

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontAwesome.ttf">
+            <string>FontAwesome</string>
+        </array>
+        <array key="FredokaOne-Regular.ttf">
+            <string>FredokaOne-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="NerdDoodle" customModuleProvider="target">
+            <connections>
+                <outlet property="authorLabel" destination="4VE-Kn-ngn" id="Sdq-3J-sRc"/>
+                <outlet property="backButton" destination="WEZ-f6-Ej0" id="NcZ-Un-cUm"/>
+                <outlet property="credits1" destination="fAZ-Gj-oDK" id="F2L-IJ-rCz"/>
+                <outlet property="credits2" destination="5F0-7g-xSF" id="rMZ-ZZ-57a"/>
+                <outlet property="credits3" destination="RRf-RC-s22" id="8Ux-je-gmd"/>
+                <outlet property="credits4" destination="WS8-rq-XSb" id="89w-i0-I3v"/>
+                <outlet property="view" destination="iN0-l3-epB" id="O2K-dS-aQP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNB-o7-iST">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MaY-oO-JcB">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1083.3333333333333"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeX-03-kTr">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTt-DS-qVG" userLabel="Heading">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="28"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="96" id="KTJ-bH-gPJ"/>
+                                        <constraint firstItem="MTt-DS-qVG" firstAttribute="leading" secondItem="WeX-03-kTr" secondAttribute="leading" id="SfD-in-4g8"/>
+                                        <constraint firstAttribute="trailing" secondItem="MTt-DS-qVG" secondAttribute="trailing" id="VhG-wQ-f86"/>
+                                        <constraint firstAttribute="bottom" secondItem="MTt-DS-qVG" secondAttribute="bottom" id="Yee-Z6-Ti2"/>
+                                        <constraint firstItem="MTt-DS-qVG" firstAttribute="top" secondItem="WeX-03-kTr" secondAttribute="top" id="oTx-ZW-2a3"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to play" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POW-r5-lB8" userLabel="How to play">
+                                    <rect key="frame" x="0.0" y="106" width="414" height="22"/>
+                                    <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfu-0z-h43">
+                                    <rect key="frame" x="0.0" y="138" width="414" height="160"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just doodle anything that comes to mind: a basketball, a car, the moon." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDG-ho-EDr" userLabel="Instructions">
+                                            <rect key="frame" x="24" y="24" width="366" height="112"/>
+                                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.90980392156862744" green="0.28235294117647058" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="CDG-ho-EDr" firstAttribute="top" secondItem="Cfu-0z-h43" secondAttribute="top" constant="24" id="2Ry-B5-fZN"/>
+                                        <constraint firstItem="CDG-ho-EDr" firstAttribute="leading" secondItem="Cfu-0z-h43" secondAttribute="leading" constant="24" id="72V-5K-4mf"/>
+                                        <constraint firstAttribute="trailing" secondItem="CDG-ho-EDr" secondAttribute="trailing" constant="24" id="Wbr-Oi-z4Y"/>
+                                        <constraint firstAttribute="height" constant="160" id="pYs-A6-l1C"/>
+                                        <constraint firstAttribute="bottom" secondItem="CDG-ho-EDr" secondAttribute="bottom" constant="24" id="sAz-Vu-XYV"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atD-S4-HEQ">
+                                    <rect key="frame" x="0.0" y="308" width="414" height="43.666666666666686"/>
+                                    <string key="text">
+Author</string>
+                                    <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygr-KQ-kbZ">
+                                    <rect key="frame" x="0.0" y="361.66666666666669" width="414" height="180.00000000000006"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VE-Kn-ngn" userLabel="Author" customClass="ActiveLabel" customModule="ActiveLabel">
+                                            <rect key="frame" x="24" y="24" width="366" height="117"/>
+                                            <string key="text">Vasiliy Kulakov
+
+ios@kulakov.us
+http://www.kulakov.us</string>
+                                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="24"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="URLColor">
+                                                    <color key="value" red="0.055884070030000003" green="0.13308037540000001" blue="0.53661421654929575" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.97647058823529409" green="0.86274509803921573" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="4VE-Kn-ngn" secondAttribute="trailing" constant="24" id="1Gq-HC-jX2"/>
+                                        <constraint firstItem="4VE-Kn-ngn" firstAttribute="leading" secondItem="ygr-KQ-kbZ" secondAttribute="leading" constant="24" id="QyH-Zf-7rT"/>
+                                        <constraint firstAttribute="height" constant="180" id="Y2K-1v-zcg"/>
+                                        <constraint firstItem="4VE-Kn-ngn" firstAttribute="top" secondItem="ygr-KQ-kbZ" secondAttribute="top" constant="24" id="bu1-fU-Dri"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-uG-d40" userLabel="Credits">
+                                    <rect key="frame" x="0.0" y="551.66666666666663" width="414" height="43.666666666666629"/>
+                                    <string key="text">
+Credits</string>
+                                    <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9T-HJ-NwH">
+                                    <rect key="frame" x="0.0" y="605.33333333333337" width="414" height="112"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pixabay" translatesAutoresizingMaskIntoConstraints="NO" id="0mL-ub-Bfi">
+                                            <rect key="frame" x="24.000000000000014" y="27.333333333333261" width="213.33333333333337" height="41.333333333333343"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image API by www.pixabay.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAZ-Gj-oDK" userLabel="Credits" customClass="ActiveLabel" customModule="ActiveLabel">
+                                            <rect key="frame" x="24" y="72.666666666666629" width="366" height="22"/>
+                                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="18"/>
+                                            <color key="textColor" red="0.13535050439999999" green="0.12991058920000001" blue="0.142244171" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="URLColor">
+                                                    <color key="value" red="0.055884070030000003" green="0.13308037540000001" blue="0.53661421649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.19215686269999999" green="0.52156862749999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="0mL-ub-Bfi" firstAttribute="centerY" secondItem="O9T-HJ-NwH" secondAttribute="centerY" constant="-8" id="95L-mA-Qka"/>
+                                        <constraint firstAttribute="height" constant="112" id="AzY-Nn-U1K"/>
+                                        <constraint firstAttribute="trailing" secondItem="fAZ-Gj-oDK" secondAttribute="trailing" constant="24" id="NJz-vT-HfY"/>
+                                        <constraint firstItem="fAZ-Gj-oDK" firstAttribute="leading" secondItem="O9T-HJ-NwH" secondAttribute="leading" constant="24" id="Zrt-zf-Jyc"/>
+                                        <constraint firstItem="fAZ-Gj-oDK" firstAttribute="top" secondItem="0mL-ub-Bfi" secondAttribute="bottom" constant="4" id="mSN-WY-jER"/>
+                                        <constraint firstItem="0mL-ub-Bfi" firstAttribute="leading" secondItem="O9T-HJ-NwH" secondAttribute="leading" constant="24" id="wKb-1d-ZEZ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2q-8j-lZw">
+                                    <rect key="frame" x="0.0" y="727.33333333333337" width="414" height="112"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Quick, Draw!&quot;,  made available by Google, Inc. under the Creative Commons Attribution 4.0 International license" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5F0-7g-xSF" userLabel="Credits" customClass="ActiveLabel" customModule="ActiveLabel">
+                                            <rect key="frame" x="24" y="24" width="366" height="66"/>
+                                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="18"/>
+                                            <color key="textColor" red="0.1353505043509603" green="0.12991058922233525" blue="0.14224417098445596" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="URLColor">
+                                                    <color key="value" red="0.055884070030000003" green="0.13308037540000001" blue="0.53661421649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.19215686274509802" green="0.52156862745098043" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="5F0-7g-xSF" firstAttribute="leading" secondItem="Q2q-8j-lZw" secondAttribute="leading" constant="24" id="0o5-Ct-Guz"/>
+                                        <constraint firstItem="5F0-7g-xSF" firstAttribute="top" secondItem="Q2q-8j-lZw" secondAttribute="top" constant="24" id="Lf0-cl-gWC"/>
+                                        <constraint firstAttribute="trailing" secondItem="5F0-7g-xSF" secondAttribute="trailing" constant="24" id="XaT-h5-D4c"/>
+                                        <constraint firstAttribute="height" constant="112" id="kzu-hM-7WC"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4G-4e-PIy">
+                                    <rect key="frame" x="0.0" y="849.33333333333337" width="414" height="112"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRf-RC-s22" userLabel="Credits" customClass="ActiveLabel" customModule="ActiveLabel">
+                                            <rect key="frame" x="24" y="24" width="366" height="66"/>
+                                            <string key="text">Guess My Drawing by Stergios Hetelekides
+https://github.com/hetelek/GuessMyDrawing-ios</string>
+                                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="18"/>
+                                            <color key="textColor" red="0.13535050439999999" green="0.12991058920000001" blue="0.142244171" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="URLColor">
+                                                    <color key="value" red="0.055884070030000003" green="0.13308037540000001" blue="0.53661421649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.19215686269999999" green="0.52156862749999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="RRf-RC-s22" secondAttribute="trailing" constant="24" id="MKe-ID-2Cr"/>
+                                        <constraint firstItem="RRf-RC-s22" firstAttribute="top" secondItem="s4G-4e-PIy" secondAttribute="top" constant="24" id="hW7-gZ-1Wx"/>
+                                        <constraint firstItem="RRf-RC-s22" firstAttribute="leading" secondItem="s4G-4e-PIy" secondAttribute="leading" constant="24" id="tme-aj-xvD"/>
+                                        <constraint firstAttribute="height" constant="112" id="u5J-E0-qMz"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpZ-UE-iam">
+                                    <rect key="frame" x="0.0" y="971.33333333333348" width="414" height="112"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night wallpaper by www.craftpix.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS8-rq-XSb" userLabel="Credits" customClass="ActiveLabel" customModule="ActiveLabel">
+                                            <rect key="frame" x="24" y="24" width="366" height="22"/>
+                                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="18"/>
+                                            <color key="textColor" red="0.13535050439999999" green="0.12991058920000001" blue="0.142244171" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="URLColor">
+                                                    <color key="value" red="0.055884070030000003" green="0.13308037540000001" blue="0.53661421649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.19215686269999999" green="0.52156862749999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="WS8-rq-XSb" firstAttribute="top" secondItem="QpZ-UE-iam" secondAttribute="top" constant="24" id="Ajy-MA-MJr"/>
+                                        <constraint firstItem="WS8-rq-XSb" firstAttribute="leading" secondItem="QpZ-UE-iam" secondAttribute="leading" constant="24" id="cJl-ck-Xkr"/>
+                                        <constraint firstAttribute="trailing" secondItem="WS8-rq-XSb" secondAttribute="trailing" constant="24" id="ghe-Dy-Tfj"/>
+                                        <constraint firstAttribute="height" constant="112" id="rpU-9K-56I"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="MaY-oO-JcB" secondAttribute="trailing" id="Bpb-zD-dRZ"/>
+                        <constraint firstAttribute="bottom" secondItem="MaY-oO-JcB" secondAttribute="bottom" id="J8t-Fd-UJ4"/>
+                        <constraint firstItem="MaY-oO-JcB" firstAttribute="leading" secondItem="CNB-o7-iST" secondAttribute="leading" id="Mud-BY-nI8"/>
+                        <constraint firstItem="MaY-oO-JcB" firstAttribute="top" secondItem="CNB-o7-iST" secondAttribute="top" id="uI5-zF-Uln"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVg-im-ZWr">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEZ-f6-Ej0">
+                            <rect key="frame" x="24" y="24" width="60" height="60"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="HZp-hx-6U8"/>
+                                <constraint firstAttribute="width" constant="60" id="O7l-eZ-KFw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="36"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                            <state key="normal" title="fa:arrowleft">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="30"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="saveTapped:" destination="-1" eventType="touchUpInside" id="vKL-Qk-fQ3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WEZ-f6-Ej0" firstAttribute="leading" secondItem="hVg-im-ZWr" secondAttribute="leading" constant="24" id="HZc-Em-X6y"/>
+                        <constraint firstItem="WEZ-f6-Ej0" firstAttribute="top" secondItem="hVg-im-ZWr" secondAttribute="top" constant="24" id="lP3-K6-ONT"/>
+                        <constraint firstAttribute="height" constant="64" id="qfP-9E-Ka5"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="hrT-GL-cdj"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.14509803921568626" green="0.098039215686274508" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="CNB-o7-iST" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4EG-2t-z49"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="hVg-im-ZWr" secondAttribute="top" id="6Pw-EF-WhM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hVg-im-ZWr" secondAttribute="trailing" id="LKq-GH-IYp"/>
+                <constraint firstItem="MaY-oO-JcB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="M8S-9Q-hWC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="CNB-o7-iST" secondAttribute="leading" id="ScO-uQ-CHf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CNB-o7-iST" secondAttribute="bottom" id="Yvs-0d-FMm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="hVg-im-ZWr" secondAttribute="leading" id="aHw-ma-qbO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CNB-o7-iST" secondAttribute="trailing" id="uJF-GS-W35"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="137"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pixabay" width="213.33332824707031" height="41.333332061767578"/>
+    </resources>
+</document>
